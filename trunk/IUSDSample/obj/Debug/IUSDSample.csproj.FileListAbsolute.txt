@@ -1,0 +1,12 @@
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\IUSDSample.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\IUSDSample.pdb
+C:\Users\leticia\Desktop\DAL\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\leticia\Desktop\DAL\IUSDSample\obj\Debug\IUSDSample.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\obj\Debug\IUSDSample.pdb
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\Models.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\Models.pdb
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\Business.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\DAL.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\MySql.Data.dll
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\Business.pdb
+C:\Users\leticia\Desktop\DAL\IUSDSample\bin\DAL.pdb
