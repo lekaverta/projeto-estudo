@@ -1,0 +1,10 @@
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\Business.dll
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\Business.pdb
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\DAL.dll
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\Models.dll
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\MySql.Data.dll
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\DAL.pdb
+C:\Users\leticia\Desktop\DAL\Business\bin\Debug\Models.pdb
+C:\Users\leticia\Desktop\DAL\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\leticia\Desktop\DAL\Business\obj\Debug\Business.dll
+C:\Users\leticia\Desktop\DAL\Business\obj\Debug\Business.pdb
