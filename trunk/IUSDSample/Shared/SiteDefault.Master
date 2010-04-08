@@ -30,7 +30,7 @@
                     <a href="#">Consultas</a>
 
                     <ul>
-                        <li><a href="#">Listar Registros</a></li>
+                        <li><a href="/Listar.aspx">Listar Músicas</a></li>
                         <li><a href="#">SubMenu#1</a></li>
                         <li><a href="#">SubMenu#2</a></li>
                     </ul>
@@ -39,7 +39,7 @@
                     <a href="#">Cadastros</a>
 
                     <ul>
-                        <li><a href="#">Novo</a></li>
+                        <li><a href="/Cadastro.aspx">Nova Música</a></li>
                         <li><a href="#">SubMenu#1</a></li>
                         <li><a href="#">SubMenu#2</a></li>
                         <li><a href="#">SubMenu#3</a></li>

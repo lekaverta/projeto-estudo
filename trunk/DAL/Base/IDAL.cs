@@ -58,7 +58,7 @@ namespace DAL
             var comandoUpdate = sqlUpdate();
 
             comandoUpdate = criarParametrosPorObjeto(item, comandoUpdate);
-            dal.criarParametro("@id", retornarValorPK(item));
+            dal.criarParametro("?id", retornarValorPK(item));
             dal.executar(comandoUpdate);
         }
 
@@ -66,7 +66,7 @@ namespace DAL
         {
             dal.limparComando();
 
-            dal.criarParametro("@id", retornarValorPK(item));
+            dal.criarParametro("?id", retornarValorPK(item));
             dal.executar(sqlDelete());
         }
         
@@ -118,15 +118,15 @@ namespace DAL
                     if (valor.GetType().ToString().Contains("Models"))
                         comando = renomearECriarParametro(comando, coluna, DBNull.Value);
                     else
-                        dal.criarParametro(String.Format("@{0}", coluna), DBNull.Value);
+                        dal.criarParametro(String.Format("?{0}", coluna), DBNull.Value);
                 }
                 else if (valor.GetType().ToString().Contains("Models"))
                 {
                     var valorI = valor.GetType().GetProperty("id").GetValue(valor, null);
-                    renomearECriarParametro(comando, coluna, valorI);
+                    comando = renomearECriarParametro(comando, coluna, valorI);
                 }
                 else
-                    dal.criarParametro(String.Format("@{0}", coluna), valor);
+                    dal.criarParametro(String.Format("?{0}", coluna), valor);
             }
             return comando;
         }
@@ -134,7 +134,7 @@ namespace DAL
         private string renomearECriarParametro(String comando, String coluna, object valor)
         {
             comando = comando.Replace(coluna, String.Format("{0}_ID", coluna));
-            dal.criarParametro(String.Format("@{0}_ID", coluna), valor);
+            dal.criarParametro(String.Format("?{0}_ID", coluna), valor);
             return comando;
         }
 
@@ -182,7 +182,7 @@ namespace DAL
                     if (!comando.ToString().EndsWith("WHERE "))
                         comando.Append(" AND ");
 
-                    comando.Append(String.Format("{0} = @{0}", coluna));
+                    comando.Append(String.Format("{0} = ?{0}", coluna));
 
                     var valor = filtros[coluna];
 
@@ -195,10 +195,10 @@ namespace DAL
                         if (!coluna.ToLower().EndsWith("id"))
                             comando = new StringBuilder(renomearECriarParametro(comando.ToString(), coluna, valor));
                         else
-                            dal.criarParametro(String.Format("@{0}", coluna), valor);
+                            dal.criarParametro(String.Format("?{0}", coluna), valor);
                     }
                     else
-                        dal.criarParametro(String.Format("@{0}", coluna), valor);
+                        dal.criarParametro(String.Format("?{0}", coluna), valor);
                 }
             }
 
@@ -212,17 +212,17 @@ namespace DAL
         
         private String sqlListarPorId(T item)
         {
-            dal.criarParametro("@id", retornarValorPK(item));
+            dal.criarParametro("?id", retornarValorPK(item));
             return String.Format
             (
-                String.Concat(sqlListarTodos(), " WHERE {0} = @id"),
+                String.Concat(sqlListarTodos(), " WHERE {0} = ?id"),
                 getTablePK()
             );
         }
 
         private String sqlDelete()
         {
-            return String.Format("DELETE FROM {0} WHERE {1} = @id", tabela(), colunaPK());
+            return String.Format("DELETE FROM {0} WHERE {1} = ?id", tabela(), colunaPK());
         }
 
         private String sqlInsert()
@@ -236,7 +236,7 @@ namespace DAL
                 if (valores.ToString() != String.Empty)
                     valores.Append(", ");
 
-                valores.Append(String.Format("@{0}", coluna));
+                valores.Append(String.Format("?{0}", coluna));
             }
 
             return String.Format(sql, tabela(), parametros, valores);
@@ -244,7 +244,7 @@ namespace DAL
 
         private String sqlUpdate()
         {
-            var sql = "UPDATE {0} SET {1} WHERE {2} = @id";
+            var sql = "UPDATE {0} SET {1} WHERE {2} = ?id";
             var valores = new StringBuilder();
 
             foreach (String coluna in colunas())
@@ -252,7 +252,7 @@ namespace DAL
                 if (valores.ToString() != String.Empty)
                     valores.Append(", ");
 
-                valores.Append(String.Format("{0} = @{0}", coluna));
+                valores.Append(String.Format("{0} = ?{0}", coluna));
             }
 
             return String.Format(sql, tabela(), valores, colunaPK());

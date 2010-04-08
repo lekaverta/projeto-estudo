@@ -76,7 +76,6 @@ namespace DAL
             try
             {
                 setarComando(comandoTexto);
-                this.comando.Parameters.Clear();
                 var dp = new MySqlDataAdapter();
                 dp.SelectCommand = this.comando;
 

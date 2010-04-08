@@ -7,26 +7,8 @@ using DAL;
 
 namespace Business
 {
-    public class ArtistaBL
+    public class ArtistaBL : IBL<Artista, ArtistaDAL>
     {
-        public void salvar(Artista artista)
-        {
-            new ArtistaDAL().salvar(artista);
-        }
-
-        public List<Artista> listarTodos()
-        {
-            return new ArtistaDAL().listarTodos();
-        }
-
-        public Artista buscarPorId(Artista artista)
-        {
-            return new ArtistaDAL().buscarPorId(artista);
-        }
-
-        public List<Artista> buscarPorFiltro(Dictionary<String, object> filtros)
-        {
-            return new ArtistaDAL().buscarPorFiltro(filtros);
-        }
+        
     }
 }

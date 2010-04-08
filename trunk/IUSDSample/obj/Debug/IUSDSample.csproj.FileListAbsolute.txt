@@ -10,3 +10,15 @@ C:\Users\leticia\Desktop\DAL\IUSDSample\bin\DAL.dll
 C:\Users\leticia\Desktop\DAL\IUSDSample\bin\MySql.Data.dll
 C:\Users\leticia\Desktop\DAL\IUSDSample\bin\Business.pdb
 C:\Users\leticia\Desktop\DAL\IUSDSample\bin\DAL.pdb
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\IUSDSample.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\IUSDSample.pdb
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\Business.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\DAL.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\Models.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\MySql.Data.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\Business.pdb
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\DAL.pdb
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\Models.pdb
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.dll
+C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.pdb
