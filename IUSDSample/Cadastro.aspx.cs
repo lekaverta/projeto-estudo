@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Business;
 using Models;
+using System.Drawing;
 
 namespace IUSDSample
 {
@@ -15,14 +16,13 @@ namespace IUSDSample
         {
             if (!IsPostBack)
                 carregarArtistas();
+
+            lblMensagem.Text = String.Empty;
         }
 
         private void carregarArtistas()
         {
-            var filtros = new Dictionary<String, object>();
-            filtros.Add("id", 1);
-
-            ddlArtista.DataSource = new ArtistaBL().buscarPorId(new Artista { id = 1 });
+            ddlArtista.DataSource = new ArtistaBL().listarTodos();
             ddlArtista.DataValueField = "id";
             ddlArtista.DataTextField = "titulo";
             ddlArtista.DataBind();
@@ -43,6 +43,41 @@ namespace IUSDSample
             ddlAlbum.DataValueField = "id";
             ddlAlbum.DataTextField = "titulo";
             ddlAlbum.DataBind();
+        }
+
+        protected void btnSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                new MusicaBL().salvar(retornarMusicaDoForm());
+                sucessoGenerico();
+            }
+            catch (Exception ex)
+            {
+                erroGenerico(ex);
+            }
+        }
+
+        private void erroGenerico(Exception ex)
+        {
+            lblMensagem.ForeColor = Color.Red;
+            lblMensagem.Text = String.Concat("Erro - ", ex.Message);
+        }
+
+        private void sucessoGenerico()
+        {
+            lblMensagem.Text = "Ok! ;)";
+            lblMensagem.ForeColor = Color.Green;
+        }
+
+        private Musica retornarMusicaDoForm()
+        {
+            return new Musica()
+            {
+                titulo = txtTitulo.Text,
+                artista = new Artista() { id = int.Parse(ddlArtista.SelectedValue), titulo = ddlArtista.SelectedItem.Text },
+                album = new Album() { id = int.Parse(ddlAlbum.SelectedValue), titulo = ddlAlbum.SelectedItem.Text }
+            };
         }
     }
 }

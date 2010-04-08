@@ -97,6 +97,10 @@
       <Project>{8F6B3CD9-30FA-4BBA-A8DA-F511FC0596E4}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{020252A7-5DCB-4179-941F-87FF43E1E35C}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{E15C5838-3D54-4D45-BB32-8D14C6BC9C8D}</Project>
       <Name>Models</Name>

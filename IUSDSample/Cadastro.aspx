@@ -23,7 +23,13 @@
         <tfoot>
             <tr>
                 <td colspan="2" class="submits">
-                    <asp:Button ID="btnSalvar" runat="server" />
+                    <asp:Label ID="lblMensagem" runat="server" ForeColor="Red" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submits">
+                    <asp:Button ID="btnSalvar" runat="server" Text="Salvar" 
+                        onclick="btnSalvar_Click" />
                 </td>
             </tr>
         </tfoot>
