@@ -14,3 +14,10 @@ C:\Users\leticia\Desktop\projeto-estudo\DAL\bin\Debug\Models.pdb
 C:\Users\leticia\Desktop\projeto-estudo\DAL\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\leticia\Desktop\projeto-estudo\DAL\obj\Debug\DAL.dll
 C:\Users\leticia\Desktop\projeto-estudo\DAL\obj\Debug\DAL.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\bin\Debug\DAL.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\bin\Debug\DAL.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\bin\Debug\Models.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\bin\Debug\Models.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\DAL.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\DAL.pdb
