@@ -27,10 +27,14 @@ namespace DAL
 
         public override Album mapearObjeto(DataRow reader)
         {
+            //Traz os Objetos internos completamente e não só o ID
+            ArtistaDAL artistaDAL = new ArtistaDAL();
+
             return new Album()
             {
                 id = Convert.ToInt32(reader["id"]),
-                artista = new Artista { id = Convert.ToInt32(reader["artista_id"]) },
+                //artista = new Artista { id = Convert.ToInt32(reader["artista_id"]) },
+                artista = artistaDAL.buscarPorId(new Artista { id = Convert.ToInt32(reader["artista_id"]) }),
                 titulo = reader["titulo"].ToString(),
                 ano_lancamento = Convert.ToInt32(reader["ano_lancamento"])
             };

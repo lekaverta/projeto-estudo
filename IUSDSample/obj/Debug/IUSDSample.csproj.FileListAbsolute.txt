@@ -22,3 +22,15 @@ C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\DAL.pdb
 C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\bin\Models.pdb
 C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.dll
 C:\Users\leticia\Desktop\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\IUSDSample.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\IUSDSample.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\Business.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\DAL.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\Models.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\MySql.Data.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\Business.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\DAL.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\Models.pdb
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\IUSDSample.dll
+D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\IUSDSample.pdb
