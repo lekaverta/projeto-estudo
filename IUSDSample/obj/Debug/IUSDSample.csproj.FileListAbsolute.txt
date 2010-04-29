@@ -34,3 +34,15 @@ D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\bin\Models.pdb
 D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
 D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\IUSDSample.dll
 D:\Documentos\Arquivos\Programação\ProjTeste\IUSDSample\obj\Debug\IUSDSample.pdb
+C:\Tortoise\projeto-estudo\IUSDSample\bin\IUSDSample.dll
+C:\Tortoise\projeto-estudo\IUSDSample\bin\IUSDSample.pdb
+C:\Tortoise\projeto-estudo\IUSDSample\bin\Business.dll
+C:\Tortoise\projeto-estudo\IUSDSample\bin\DAL.dll
+C:\Tortoise\projeto-estudo\IUSDSample\bin\Models.dll
+C:\Tortoise\projeto-estudo\IUSDSample\bin\MySql.Data.dll
+C:\Tortoise\projeto-estudo\IUSDSample\bin\Business.pdb
+C:\Tortoise\projeto-estudo\IUSDSample\bin\DAL.pdb
+C:\Tortoise\projeto-estudo\IUSDSample\bin\Models.pdb
+C:\Tortoise\projeto-estudo\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Tortoise\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.dll
+C:\Tortoise\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.pdb
