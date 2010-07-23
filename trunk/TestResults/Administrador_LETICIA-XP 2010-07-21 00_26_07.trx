@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="36ffe984-422d-426e-a124-e3d6114f21d5" name="Administrador@LETICIA-XP 2010-07-21 00:26:07" runUser="LETICIA-XP\Administrador" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a8b89724-51de-4715-ad33-a32984976e61">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrador_LETICIA-XP 2010-07-21 00_26_07">
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Models\bin\Debug\Models.dll" />
+      <DeploymentItem filename="C:\Projetos\moq\NET40\Moq.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-07-21T00:26:07.9509500-03:00" queuing="2010-07-21T00:26:12.2371132-03:00" start="2010-07-21T00:26:12.7578620-03:00" finish="2010-07-21T00:26:26.1571292-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Inicializa_Musica_Com_Album_E_Artista" storage="c:\projetos\projeto-estudo\tests\bin\debug\tests.dll" id="4f36fa0e-5a1b-6a96-d597-cae1dd65e047">
+      <Execution id="5745c99a-48ad-4f37-9932-22ddc9a2384e" />
+      <TestMethod codeBase="C:/Projetos/projeto-estudo/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Inicializacoes, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Inicializa_Musica_Com_Album_E_Artista" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4f36fa0e-5a1b-6a96-d597-cae1dd65e047" executionId="5745c99a-48ad-4f37-9932-22ddc9a2384e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5745c99a-48ad-4f37-9932-22ddc9a2384e" testId="4f36fa0e-5a1b-6a96-d597-cae1dd65e047" testName="Inicializa_Musica_Com_Album_E_Artista" computerName="LETICIA-XP" duration="00:00:08.4243215" startTime="2010-07-21T00:26:13.1784668-03:00" endTime="2010-07-21T00:26:24.7851564-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5745c99a-48ad-4f37-9932-22ddc9a2384e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Models.Album&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   at Tests.Inicializacoes.Inicializa_Musica_Com_Album_E_Artista() in C:\Projetos\projeto-estudo\Tests\Inicializacoes.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

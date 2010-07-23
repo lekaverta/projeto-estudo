@@ -18,3 +18,13 @@ C:\Users\leticia\Desktop\projeto-estudo\Business\bin\Debug\Models.pdb
 C:\Users\leticia\Desktop\projeto-estudo\Business\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\leticia\Desktop\projeto-estudo\Business\obj\Debug\Business.dll
 C:\Users\leticia\Desktop\projeto-estudo\Business\obj\Debug\Business.pdb
+C:\Projetos\projeto-estudo\Business\bin\Debug\Business.dll
+C:\Projetos\projeto-estudo\Business\bin\Debug\Business.pdb
+C:\Projetos\projeto-estudo\Business\bin\Debug\DAL.dll
+C:\Projetos\projeto-estudo\Business\bin\Debug\Models.dll
+C:\Projetos\projeto-estudo\Business\bin\Debug\MySql.Data.dll
+C:\Projetos\projeto-estudo\Business\bin\Debug\DAL.pdb
+C:\Projetos\projeto-estudo\Business\bin\Debug\Models.pdb
+C:\Projetos\projeto-estudo\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\projeto-estudo\Business\obj\Debug\Business.dll
+C:\Projetos\projeto-estudo\Business\obj\Debug\Business.pdb

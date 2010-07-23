@@ -21,3 +21,10 @@ D:\Documentos\Arquivos\Programação\ProjTeste\DAL\bin\Debug\Models.pdb
 D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\ResolveAssemblyReference.cache
 D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\DAL.dll
 D:\Documentos\Arquivos\Programação\ProjTeste\DAL\obj\Debug\DAL.pdb
+C:\Projetos\projeto-estudo\DAL\bin\Debug\DAL.dll
+C:\Projetos\projeto-estudo\DAL\bin\Debug\DAL.pdb
+C:\Projetos\projeto-estudo\DAL\bin\Debug\Models.dll
+C:\Projetos\projeto-estudo\DAL\bin\Debug\Models.pdb
+C:\Projetos\projeto-estudo\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Projetos\projeto-estudo\DAL\obj\Debug\DAL.dll
+C:\Projetos\projeto-estudo\DAL\obj\Debug\DAL.pdb

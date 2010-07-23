@@ -20,41 +20,28 @@ div#topo img {
 
 /* MENU */
 
-ul#menu * {
-    padding:0px;
-    margin:0px;
+.container-menu {
+    background:none repeat scroll 0 0 #EFEFEF;
 }
-ul#menu li a {
+table.menu tbody tr td table tbody tr td {
+    padding:5px 15px;
+}
+table.menu a {
     text-decoration:none;
     color:#000;
 }
-ul#menu li.principal a:hover {
+table.menu a:hover {
     color:Red;
 }
     /* PRINCIPAL */
-    ul#menu {
-        list-style:none;
+    table.menu {
         background:none repeat scroll 0 0 #EFEFEF;
-        overflow:hidden;
-    }
-    ul#menu li.principal{
-        float:left;
-        padding: 5px 15px 5px 15px;
-    }
-    ul#menu li.principal_over {
-        background:none repeat scroll 0 0 #CCC !important;
-    }
+    }   
     
     /* SUB */
-    ul#menu ul {
-        list-style:none;
-        display:none;
-        position:absolute;
+    .submenu {
         background:none repeat scroll 0 0 #EFEFEF;
-        margin:5px 0px 0px -15px;
-    }
-    ul#menu ul li{
-        padding: 5px 15px 5px 15px;
+        padding:5px;
     }
 
 
@@ -86,4 +73,26 @@ table.formulario tbody td.titulo{
 }
 table.formulario tfoot td.submits{
     text-align:center;
+}
+
+/* NAVEGACAO */
+.navegacao {
+    font-size:12px;
+    border-bottom:1px solid;
+    padding:5px;
+    margin-bottom:15px;
+}
+.navegacao a {
+    text-decoration:none;
+}
+.navegacao a:hover {
+    text-decoration:underline;
+}
+
+/* LINKS */
+a.lk-editar {
+    color:blue;
+    font-size:8px;
+    text-decoration:none;
+    margin-left:3px;
 }

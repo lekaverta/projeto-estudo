@@ -9,7 +9,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IUSDSample", "IUSDSample\IU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{8F6B3CD9-30FA-4BBA-A8DA-F511FC0596E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{34B501C2-804D-4EB2-B284-94D2BF8F6EFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DA8D677-5585-4821-B74E-D52CDE1B6507}"
+	ProjectSection(SolutionItems) = preProject
+		DAL.vsmdi = DAL.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DAL.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -31,6 +43,10 @@ Global
 		{8F6B3CD9-30FA-4BBA-A8DA-F511FC0596E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F6B3CD9-30FA-4BBA-A8DA-F511FC0596E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F6B3CD9-30FA-4BBA-A8DA-F511FC0596E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B501C2-804D-4EB2-B284-94D2BF8F6EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B501C2-804D-4EB2-B284-94D2BF8F6EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B501C2-804D-4EB2-B284-94D2BF8F6EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B501C2-804D-4EB2-B284-94D2BF8F6EFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

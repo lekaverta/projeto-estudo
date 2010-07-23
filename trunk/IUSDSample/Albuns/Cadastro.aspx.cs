@@ -4,52 +4,60 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Business;
 using Models;
 using System.Drawing;
+using Business;
 
-namespace IUSDSample
+namespace IUSDSample.Albuns
 {
     public partial class Cadastro : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
+            {
                 carregarArtistas();
-
-            lblMensagem.Text = String.Empty;
+                editarAlbum();
+            }
         }
 
         private void carregarArtistas()
         {
-            ddlArtista.DataSource = new ArtistaBL().listarTodos();
+            ddlArtista.DataSource = ArtistaBL.listarTodos();
             ddlArtista.DataValueField = "id";
             ddlArtista.DataTextField = "titulo";
             ddlArtista.DataBind();
             ddlArtista.Items.Insert(0, new ListItem { Text = "Selecione :)", Value = String.Empty });
         }
 
-        protected void ddlArtista_SelectedIndexChanged(object sender, EventArgs e)
+        private void editarAlbum()
         {
-            carregarAlbums();
+            if (Request.QueryString.Get("codigo") != null)
+            {
+                var album = new Album(new Artista());
+                album.id = Convert.ToInt32(Request.QueryString.Get("codigo"));
+                album = AlbumBL.buscarPorId(album);
+
+                carregarAlbumEmForm(album);
+            }
         }
 
-        private void carregarAlbums()
+        private void carregarAlbumEmForm(Album album)
         {
-            var filtros = new Dictionary<String, object>();
-            filtros.Add("artista_id", Convert.ToInt32(ddlArtista.SelectedValue));
-
-            ddlAlbum.DataSource = new AlbumBL().buscarPorFiltro(filtros);
-            ddlAlbum.DataValueField = "id";
-            ddlAlbum.DataTextField = "titulo";
-            ddlAlbum.DataBind();
+            hdnCodigo.Value = album.id.ToString();
+            txtTitulo.Text = album.titulo;
+            txtAnoLancamento.Text = album.ano_lancamento.ToString();
+            ddlArtista.SelectedValue = album.artista.id.ToString();
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             try
             {
-                new MusicaBL().salvar(retornarMusicaDoForm());
+                var album = retornarAlbumDoForm();
+                AlbumBL.salvar(album);
+
+                hdnCodigo.Value = album.id.ToString();
                 sucessoGenerico();
             }
             catch (Exception ex)
@@ -70,14 +78,18 @@ namespace IUSDSample
             lblMensagem.ForeColor = Color.Green;
         }
 
-        private Musica retornarMusicaDoForm()
+        private Album retornarAlbumDoForm()
         {
-            return new Musica()
-            {
-                titulo = txtTitulo.Text,
-                artista = new Artista() { id = int.Parse(ddlArtista.SelectedValue), titulo = ddlArtista.SelectedItem.Text },
-                album = new Album() { id = int.Parse(ddlAlbum.SelectedValue), titulo = ddlAlbum.SelectedItem.Text }
+            var artista = new Artista {
+                id = Convert.ToInt32(ddlArtista.SelectedValue)
             };
+            
+            var album = new Album(artista);
+            album.id = Convert.ToInt32(hdnCodigo.Value);
+            album.titulo = txtTitulo.Text;
+            album.ano_lancamento = Convert.ToInt32(txtAnoLancamento.Text);
+
+            return album;
         }
     }
 }

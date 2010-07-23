@@ -13,18 +13,6 @@ namespace IUSDSample
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.cmdSignOut.ServerClick += new System.EventHandler(this.cmdSignOut_ServerClick);
-            
-            //if (!this.IsPostBack)
-            //    this.Form.DefaultFocus = txtUsuario.ClientID;
-
         }
-
-        private void cmdSignOut_ServerClick(object sender, System.EventArgs e)
-        {
-            FormsAuthentication.SignOut();
-            Response.Redirect("login.aspx", true);
-        }
-
     }
 }

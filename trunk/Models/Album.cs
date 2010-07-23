@@ -11,5 +11,10 @@ namespace Models
         public Artista artista { get; set; }
         public string titulo { get; set; }
         public int ano_lancamento { get; set; }
+
+        public Album(Artista artista)
+        {
+            this.artista = artista;
+        }
     }
 }
