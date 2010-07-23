@@ -8,22 +8,22 @@ namespace Business
 {
     public abstract class IBL<T, DAL> where DAL : IDAL<T>, new()
     {
-        public void salvar(T item)
+        public static void salvar(T item)
         {
             new DAL().salvar(item);
         }
 
-        public List<T> listarTodos()
+        public static List<T> listarTodos()
         {
             return new DAL().listarTodos();
         }
 
-        public T buscarPorId(T item)
+        public static T buscarPorId(T item)
         {
             return new DAL().buscarPorId(item);
         }
 
-        public List<T> buscarPorFiltro(Dictionary<String, object> filtros)
+        public static List<T> buscarPorFiltro(Dictionary<String, object> filtros)
         {
             return new DAL().buscarPorFiltro(filtros);
         }

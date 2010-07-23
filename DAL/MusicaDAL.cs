@@ -27,18 +27,18 @@ namespace DAL
 
         public override Musica mapearObjeto(DataRow reader)
         {
-            AlbumDAL albumDAL = new AlbumDAL();
-            ArtistaDAL artistaDAL = new ArtistaDAL();
+            var artista = new ArtistaDAL().buscarPorId(new Artista { id = Convert.ToInt32(reader["artista_id"]) });
 
-            return new Musica()
-            {
-                id = Convert.ToInt32(reader["id"]),
-                //artista = new Artista() { id = Convert.ToInt32(reader["artista_id"]) },
-                //album = new Album() { id = Convert.ToInt32(reader["album_id"]) },
-                artista = artistaDAL.buscarPorId(new Artista() { id = Convert.ToInt32(reader["artista_id"]) }),
-                album = albumDAL.buscarPorId(new Album() { id = Convert.ToInt32(reader["album_id"]) }),
-                titulo = reader["titulo"].ToString()
-            };
+            var album = new Album(artista);
+            album.id = Convert.ToInt32(reader["album_id"]);
+            album = new AlbumDAL().buscarPorId(album);
+
+            var musica = new Musica(album);
+            musica.id = Convert.ToInt32(reader["id"]);
+            musica.titulo = reader["titulo"].ToString();
+            musica.artista = artista;
+
+            return musica;
         }
     }
 }

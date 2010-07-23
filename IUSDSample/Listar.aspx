@@ -7,18 +7,21 @@
             <asp:BoundField HeaderText="Título" DataField="titulo" />
             <asp:TemplateField HeaderText="Artista/Banda">
                 <ItemTemplate>
-                    <a href='Listar.aspx?artista=<%#DataBinder.Eval(Container.DataItem, "artista.id")%>'>
-                        <%--<%#DataBinder.Eval(Container.DataItem, "artista.id")%>--%>
-                        <%--<%#DataBinder.Eval(Container.DataItem, "artista.titulo")%>--%>
+                    <a href='Listar.aspx?artista=<%#DataBinder.Eval(Container.DataItem, "album.artista.id")%>'>
                         <%#DataBinder.Eval(Container.DataItem, "album.artista.titulo")%>
+                    </a>
+                    <a class="lk-editar" href='Artistas/Cadastro.aspx?codigo=<%#DataBinder.Eval(Container.DataItem, "album.artista.id")%>'>
+                        editar
                     </a>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Albúm">
                 <ItemTemplate>
                     <a href='Listar.aspx?album=<%#DataBinder.Eval(Container.DataItem, "album.id")%>'>
-                        <%--<%#DataBinder.Eval(Container.DataItem, "album.id")%>--%>
                         <%#DataBinder.Eval(Container.DataItem, "album.titulo")%>
+                    </a>
+                    <a class="lk-editar" href='Albuns/Cadastro.aspx?codigo=<%#DataBinder.Eval(Container.DataItem, "album.id")%>'>
+                        editar
                     </a>
                 </ItemTemplate>
             </asp:TemplateField>

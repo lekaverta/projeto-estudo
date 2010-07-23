@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description="Home">
+      <siteMapNode url="" title="Albuns"  description="">
+        <siteMapNode url="Albuns/Cadastro.aspx" title="Cadastrar Albuns" description="Cadastrar Albuns" />
+      </siteMapNode>
+      <siteMapNode url="" title="Artistas"  description="">
+        <siteMapNode url="Artistas/Cadastro.aspx" title="Cadastrar Artistas" description="Cadastrar Artistas" />
+      </siteMapNode>
+        <siteMapNode url="" title="Musicas"  description="">
+          <siteMapNode url="Musicas/Cadastro.aspx" title="Cadastrar Musicas" description="Cadastrar Musicas" />
+        </siteMapNode>
+        <siteMapNode url="Listar.aspx" title="Biblioteca Musical"  description="Biblioteca Musical" />
+        <siteMapNode url="Login.aspx?logout=true" title="Sair"  description="Sair" />
+    </siteMapNode>
+</siteMap>

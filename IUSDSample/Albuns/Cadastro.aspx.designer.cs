@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IUSDSample {
+namespace IUSDSample.Albuns {
     
     
     public partial class Cadastro {
         
         /// <summary>
-        /// lblTituloPagina control.
+        /// hdnCodigo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTituloPagina;
+        protected global::System.Web.UI.WebControls.HiddenField hdnCodigo;
         
         /// <summary>
         /// txtTitulo control.
@@ -40,13 +40,13 @@ namespace IUSDSample {
         protected global::System.Web.UI.WebControls.DropDownList ddlArtista;
         
         /// <summary>
-        /// ddlAlbum control.
+        /// txtAnoLancamento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAlbum;
+        protected global::System.Web.UI.WebControls.TextBox txtAnoLancamento;
         
         /// <summary>
         /// lblMensagem control.
