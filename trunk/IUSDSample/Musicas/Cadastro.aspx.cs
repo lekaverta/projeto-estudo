@@ -73,7 +73,7 @@ namespace IUSDSample
             try
             {
                 var musica = retornarMusicaDoForm();
-                MusicaBL.salvar(musica);
+                new MusicaBL().salvar(musica);
 
                 hdnCodigo.Value = musica.id.ToString();
                 sucessoGenerico();

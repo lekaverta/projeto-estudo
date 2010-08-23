@@ -5,11 +5,22 @@ using System.Text;
 using Models;
 using MySql.Data.MySqlClient;
 using System.Data;
+using DAL.Base;
 
 namespace DAL
 {
     public class ArtistaDAL : IDAL<Artista>
     {
+        public ArtistaDAL(DALInterface dal)
+        {
+            this.dal = dal;
+        }
+
+        public ArtistaDAL()
+        {
+            this.dal = new DAL();
+        }
+
         public override String tabela()
         {
             return "tbartistas";

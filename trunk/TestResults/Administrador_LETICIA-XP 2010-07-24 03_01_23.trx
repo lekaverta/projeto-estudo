@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5a342bae-f990-4e1a-be66-53f5f971b820" name="Administrador@LETICIA-XP 2010-07-24 03:01:23" runUser="LETICIA-XP\Administrador" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a8b89724-51de-4715-ad33-a32984976e61">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrador_LETICIA-XP 2010-07-24 03_01_23">
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Business\bin\Debug\Business.dll" />
+      <DeploymentItem filename="C:\Projetos\moq\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Models\bin\Debug\Models.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-07-24T03:01:23.5822492-03:00" queuing="2010-07-24T03:01:27.4978796-03:00" start="2010-07-24T03:01:28.3891612-03:00" finish="2010-07-24T03:01:32.9657420-03:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Inicializa_Album_Com_Artista" storage="c:\projetos\projeto-estudo\tests\bin\debug\tests.dll" id="21aa45b1-1c39-6680-d0d3-b2a9bdf7c476">
+      <Execution id="1a7b5845-b80a-4756-82f1-e9c176fbc1e0" />
+      <TestMethod codeBase="C:/Projetos/projeto-estudo/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Inicializacoes, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Inicializa_Album_Com_Artista" />
+    </UnitTest>
+    <UnitTest name="Inicializa_Musica_Com_Album_E_Artista" storage="c:\projetos\projeto-estudo\tests\bin\debug\tests.dll" id="4f36fa0e-5a1b-6a96-d597-cae1dd65e047">
+      <Execution id="1ff4fac3-c559-40e5-be3d-85618600d693" />
+      <TestMethod codeBase="C:/Projetos/projeto-estudo/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Inicializacoes, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Inicializa_Musica_Com_Album_E_Artista" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="21aa45b1-1c39-6680-d0d3-b2a9bdf7c476" executionId="1a7b5845-b80a-4756-82f1-e9c176fbc1e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f36fa0e-5a1b-6a96-d597-cae1dd65e047" executionId="1ff4fac3-c559-40e5-be3d-85618600d693" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1a7b5845-b80a-4756-82f1-e9c176fbc1e0" testId="21aa45b1-1c39-6680-d0d3-b2a9bdf7c476" testName="Inicializa_Album_Com_Artista" computerName="LETICIA-XP" duration="00:00:00.2117651" startTime="2010-07-24T03:01:29.0100540-03:00" endTime="2010-07-24T03:01:32.2046476-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a7b5845-b80a-4756-82f1-e9c176fbc1e0">
+    </UnitTestResult>
+    <UnitTestResult executionId="1ff4fac3-c559-40e5-be3d-85618600d693" testId="4f36fa0e-5a1b-6a96-d597-cae1dd65e047" testName="Inicializa_Musica_Com_Album_E_Artista" computerName="LETICIA-XP" duration="00:00:00.0014479" startTime="2010-07-24T03:01:32.3047916-03:00" endTime="2010-07-24T03:01:32.3748924-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ff4fac3-c559-40e5-be3d-85618600d693">
+    </UnitTestResult>
+  </Results>
+</TestRun>

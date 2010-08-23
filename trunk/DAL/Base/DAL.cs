@@ -5,10 +5,11 @@ using System.Text;
 using System.Configuration;
 using MySql.Data.MySqlClient;
 using System.Data;
+using DAL.Base;
 
 namespace DAL
 {
-    public class DAL
+    public class DAL : DALInterface
     {
         private MySqlConnection conexao;
         private MySqlCommand comando;
@@ -17,12 +18,6 @@ namespace DAL
         {
             setarConexao(ConfigurationManager.ConnectionStrings["conexaoDefault"].ConnectionString);
         }
-
-        public DAL(string stringConexao)
-        {
-            setarConexao(stringConexao);
-        }
-
 
         public void limparComando()
         {

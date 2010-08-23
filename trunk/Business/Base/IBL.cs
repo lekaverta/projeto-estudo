@@ -8,7 +8,7 @@ namespace Business
 {
     public abstract class IBL<T, DAL> where DAL : IDAL<T>, new()
     {
-        public static void salvar(T item)
+        public void salvar(T item)
         {
             new DAL().salvar(item);
         }
