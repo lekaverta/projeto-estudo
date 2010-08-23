@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24bdffe5-f907-4f90-9b30-e28d71c72cf3" name="Administrador@LETICIA-XP 2010-08-17 16:55:25" runUser="LETICIA-XP\Administrador" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a8b89724-51de-4715-ad33-a32984976e61">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrador_LETICIA-XP 2010-08-17 16_55_25">
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Business\bin\Debug\Business.dll" />
+      <DeploymentItem filename="C:\Projetos\moq\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Models\bin\Debug\Models.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-08-17T16:55:25.8775538-03:00" queuing="2010-08-17T16:55:29.6329538-03:00" start="2010-08-17T16:55:30.2838898-03:00" finish="2010-08-17T16:56:21.0368690-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Verificar_Processo_De_Insercao" storage="c:\projetos\projeto-estudo\tests\bin\debug\tests.dll" id="de319a63-3756-16ad-bf58-19588c8f0269">
+      <Execution id="3743d2be-1aab-49fb-94c1-3ec425ac804c" />
+      <TestMethod codeBase="C:/Projetos/projeto-estudo/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Artista, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Verificar_Processo_De_Insercao" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="de319a63-3756-16ad-bf58-19588c8f0269" executionId="3743d2be-1aab-49fb-94c1-3ec425ac804c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3743d2be-1aab-49fb-94c1-3ec425ac804c" testId="de319a63-3756-16ad-bf58-19588c8f0269" testName="Verificar_Processo_De_Insercao" computerName="LETICIA-XP" duration="00:00:46.6940541" startTime="2010-08-17T16:55:30.6444082-03:00" endTime="2010-08-17T16:56:20.1455874-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3743d2be-1aab-49fb-94c1-3ec425ac804c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Tests.Artista.Verificar_Processo_De_Insercao threw exception: 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---&gt; System.ArgumentException: Format of the initialization string does not conform to specification starting at index 0.</Message>
+          <StackTrace>    at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String&amp; keyname, String&amp; keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connectionString)
+   at MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   at MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   at DAL.DAL.setarConexao(String stringConexao) in C:\Projetos\projeto-estudo\DAL\Base\DAL.cs:line 43
+   at DAL.DAL..ctor() in C:\Projetos\projeto-estudo\DAL\Base\DAL.cs:line 18
+   at Castle.Proxies.DALProxy..ctor(IInterceptor[] )
+ --- End of inner exception stack trace ---
+    at System.RuntimeMethodHandle._InvokeConstructor(IRuntimeMethodInfo method, Object[] args, SignatureStruct&amp; signature, RuntimeType declaringType)
+   at System.RuntimeMethodHandle.InvokeConstructor(IRuntimeMethodInfo method, Object[] args, SignatureStruct signature, RuntimeType declaringType)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.RuntimeType.CreateInstanceImpl(BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
+   at System.Activator.CreateInstance(Type type, Object[] args)
+   at Castle.DynamicProxy.ProxyGenerator.CreateClassProxyInstance(Type proxyType, List`1 proxyArguments, Type classToProxy, Object[] constructorArguments)
+   at Castle.DynamicProxy.ProxyGenerator.CreateClassProxy(Type classToProxy, Type[] additionalInterfacesToProxy, ProxyGenerationOptions options, Object[] constructorArguments, IInterceptor[] interceptors)
+   at Moq.Proxy.CastleProxyFactory.CreateProxy[T](ICallInterceptor interceptor, Type[] interfaces, Object[] arguments)
+   at Moq.Mock`1.&lt;InitializeInstance&gt;b__0()
+   at Moq.PexProtector.Invoke(Action action)
+   at Moq.Mock`1.InitializeInstance()
+   at Moq.Mock`1.OnGetObject()
+   at Moq.Mock.GetObject()
+   at Moq.Mock.get_Object()
+   at Moq.Mock`1.get_Object()
+   at Tests.Artista.Verificar_Processo_De_Insercao() in C:\Projetos\projeto-estudo\Tests\Artista.cs:line 22
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

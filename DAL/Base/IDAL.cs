@@ -4,17 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Reflection;
 using System.Data;
+using DAL.Base;
 
 namespace DAL
 {
     public abstract class IDAL<T>
     {
-        protected DAL dal;
-
-        public IDAL()
-        {
-            this.dal = new DAL();
-        }
+        public DALInterface dal;
 
         public abstract String tabela();
         public abstract String colunaPK();
@@ -114,12 +110,7 @@ namespace DAL
                 var valor = retornarValorColuna(item, coluna);
 
                 if (valor == null)
-                {
-                    if (valor.GetType().ToString().Contains("Models"))
-                        comando = renomearECriarParametro(comando, coluna, DBNull.Value);
-                    else
-                        dal.criarParametro(String.Format("?{0}", coluna), DBNull.Value);
-                }
+                    dal.criarParametro(String.Format("?{0}", coluna), DBNull.Value);
                 else if (valor.GetType().ToString().Contains("Models"))
                 {
                     var valorI = valor.GetType().GetProperty("id").GetValue(valor, null);

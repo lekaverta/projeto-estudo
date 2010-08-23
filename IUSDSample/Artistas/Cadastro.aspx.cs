@@ -42,7 +42,7 @@ namespace IUSDSample.Artistas
             try
             {
                 var artista = retornarArtistaDoForm();
-                ArtistaBL.salvar(artista);
+                new ArtistaBL().salvar(artista);
 
                 hdnCodigo.Value = artista.id.ToString();
                 sucessoGenerico();

@@ -8,3 +8,9 @@ C:\Projetos\projeto-estudo\Tests\obj\Debug\Tests.dll
 C:\Projetos\projeto-estudo\Tests\obj\Debug\Tests.pdb
 C:\Projetos\projeto-estudo\Tests\bin\Debug\Models.dll
 C:\Projetos\projeto-estudo\Tests\bin\Debug\Models.pdb
+C:\Projetos\projeto-estudo\Tests\bin\Debug\Business.dll
+C:\Projetos\projeto-estudo\Tests\bin\Debug\DAL.dll
+C:\Projetos\projeto-estudo\Tests\bin\Debug\MySql.Data.dll
+C:\Projetos\projeto-estudo\Tests\bin\Debug\Business.pdb
+C:\Projetos\projeto-estudo\Tests\bin\Debug\DAL.pdb
+C:\Projetos\projeto-estudo\Tests\bin\Debug\Tests.dll.config

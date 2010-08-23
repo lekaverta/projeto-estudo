@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="26577f54-5e11-4608-b8a0-6c95c88880f7" name="Administrador@LETICIA-XP 2010-08-17 17:03:55" runUser="LETICIA-XP\Administrador" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a8b89724-51de-4715-ad33-a32984976e61">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrador_LETICIA-XP 2010-08-17 17_03_55">
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Business\bin\Debug\Business.dll" />
+      <DeploymentItem filename="C:\Projetos\moq\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\DAL\bin\Debug\DAL.dll" />
+      <DeploymentItem filename="C:\Projetos\projeto-estudo\Models\bin\Debug\Models.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-08-17T17:03:55.2399810-03:00" queuing="2010-08-17T17:04:01.4689378-03:00" start="2010-08-17T17:04:02.1499170-03:00" finish="2010-08-17T17:05:46.5099794-03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LETICIA-XP" outcome="Error" timestamp="2010-08-17T17:05:46.4899506-03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Verificar_Processo_De_Insercao" storage="c:\projetos\projeto-estudo\tests\bin\debug\tests.dll" id="de319a63-3756-16ad-bf58-19588c8f0269">
+      <Execution id="66434305-4046-4fc1-9c5e-ac517ada9957" />
+      <TestMethod codeBase="C:/Projetos/projeto-estudo/Tests/bin/Debug/Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Artista, Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Verificar_Processo_De_Insercao" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="de319a63-3756-16ad-bf58-19588c8f0269" executionId="66434305-4046-4fc1-9c5e-ac517ada9957" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="66434305-4046-4fc1-9c5e-ac517ada9957" testId="de319a63-3756-16ad-bf58-19588c8f0269" testName="Verificar_Processo_De_Insercao" computerName="LETICIA-XP" duration="00:01:43.9995440" startTime="2010-08-17T17:04:02.5104354-03:00" endTime="2010-08-17T17:05:46.5099794-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66434305-4046-4fc1-9c5e-ac517ada9957">
+    </UnitTestResult>
+  </Results>
+</TestRun>

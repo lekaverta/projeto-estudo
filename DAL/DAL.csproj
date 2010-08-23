@@ -47,6 +47,7 @@
     <Compile Include="AlbumDAL.cs" />
     <Compile Include="ArtistaDAL.cs" />
     <Compile Include="Base\DAL.cs" />
+    <Compile Include="Base\DALInterface.cs" />
     <Compile Include="Base\IDAL.cs" />
     <Compile Include="MusicaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

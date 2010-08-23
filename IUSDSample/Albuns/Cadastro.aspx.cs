@@ -55,7 +55,7 @@ namespace IUSDSample.Albuns
             try
             {
                 var album = retornarAlbumDoForm();
-                AlbumBL.salvar(album);
+                new AlbumBL().salvar(album);
 
                 hdnCodigo.Value = album.id.ToString();
                 sucessoGenerico();

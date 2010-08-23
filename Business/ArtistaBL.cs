@@ -9,6 +9,5 @@ namespace Business
 {
     public class ArtistaBL : IBL<Artista, ArtistaDAL>
     {
-        
     }
 }
