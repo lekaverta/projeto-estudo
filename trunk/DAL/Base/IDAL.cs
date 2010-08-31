@@ -17,6 +17,11 @@ namespace DAL
         public abstract List<String> colunas();
         public abstract T mapearObjeto(DataRow reader);
 
+        public IDAL()
+        {
+            this.dal = new DAL();
+        }
+
         protected virtual String getTablePK()
         {
             return "id";
@@ -46,6 +51,8 @@ namespace DAL
                 Convert.ToInt32(dal.executarScalar(comandoInsert)), 
                 null
             );
+
+            this.dal.destruir();
         }
 
         private void atualizar(T item)
@@ -56,6 +63,8 @@ namespace DAL
             comandoUpdate = criarParametrosPorObjeto(item, comandoUpdate);
             dal.criarParametro("?id", retornarValorPK(item));
             dal.executar(comandoUpdate);
+
+            this.dal.destruir();
         }
 
         public void delete(T item)
@@ -64,12 +73,17 @@ namespace DAL
 
             dal.criarParametro("?id", retornarValorPK(item));
             dal.executar(sqlDelete());
+
+            this.dal.destruir();
         }
         
         public List<T> listarTodos()
         {
             dal.limparComando();
-            return executar(sqlListarTodos());
+            var retorno = executar(sqlListarTodos());
+            this.dal.destruir();
+
+            return retorno;
         }
 
         public T buscarPorId(T item)
@@ -77,6 +91,8 @@ namespace DAL
             dal.limparComando();
 
             var resultados = executar(sqlListarPorId(item));
+
+            this.dal.destruir();
 
             if (resultados != null && resultados.Count > 0)
                 return resultados.First();

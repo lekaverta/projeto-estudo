@@ -58,3 +58,15 @@ C:\Projetos\projeto-estudo\IUSDSample\bin\Models.pdb
 C:\Projetos\projeto-estudo\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
 C:\Projetos\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.dll
 C:\Projetos\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\IUSDSample.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\IUSDSample.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\Business.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\DAL.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\Models.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\MySql.Data.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\Business.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\DAL.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\bin\Models.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\IUSDSample\obj\Debug\IUSDSample.pdb
