@@ -13,3 +13,8 @@ C:\Projetos\projeto-estudo\Models\bin\Debug\Models.pdb
 C:\Projetos\projeto-estudo\Models\obj\Debug\ResolveAssemblyReference.cache
 C:\Projetos\projeto-estudo\Models\obj\Debug\Models.dll
 C:\Projetos\projeto-estudo\Models\obj\Debug\Models.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Models\bin\Debug\Models.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Models\bin\Debug\Models.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Models\obj\Debug\Models.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Models\obj\Debug\Models.pdb

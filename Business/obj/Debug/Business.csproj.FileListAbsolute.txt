@@ -28,3 +28,13 @@ C:\Projetos\projeto-estudo\Business\bin\Debug\Models.pdb
 C:\Projetos\projeto-estudo\Business\obj\Debug\ResolveAssemblyReference.cache
 C:\Projetos\projeto-estudo\Business\obj\Debug\Business.dll
 C:\Projetos\projeto-estudo\Business\obj\Debug\Business.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\Business.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\Business.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\DAL.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\Models.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\MySql.Data.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\DAL.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\bin\Debug\Models.pdb
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\obj\Debug\Business.dll
+C:\Users\Vertinha\Documents\Visual Studio 2010\Projects\projeto-estudo\Business\obj\Debug\Business.pdb

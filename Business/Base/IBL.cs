@@ -13,6 +13,11 @@ namespace Business
             new DAL().salvar(item);
         }
 
+        public static void deletar(T item)
+        {
+            new DAL().delete(item);
+        }
+
         public static List<T> listarTodos()
         {
             return new DAL().listarTodos();

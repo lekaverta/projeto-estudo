@@ -63,50 +63,15 @@ namespace IUSDSample
             return filtros;
         }
 
-        private List<Musica> simularRetornoDeDados()
+        protected void lkbExcluir_Click(object sender, EventArgs e)
         {
-            var musicaList = new List<Musica>();
-
-            var losHermanos = new Artista { titulo = "Los Hermanos", id = 1 };
+            var lkbExcluir = (LinkButton)sender;
             
-            var ventura = new Album(losHermanos);
-            ventura.id = 2;
-            ventura.titulo = "Ventura";
+            var musicaDeletada = new Musica(new Album(new Artista()));
+            musicaDeletada.id = Convert.ToInt32(lkbExcluir.CommandArgument);
+            MusicaBL.deletar(musicaDeletada);
 
-            var quatro = new Album(losHermanos);
-            quatro.id = 1;
-            quatro.titulo = "4";
-
-            var blocoDoEuSozinho = new Album(losHermanos);
-            blocoDoEuSozinho.id = 3;
-            blocoDoEuSozinho.titulo = "Bloco Do EU Sozinho";
-
-            var sambaADois = new Musica(ventura);
-            sambaADois.id = 1;
-            sambaADois.titulo = "Samba a dois";
-            musicaList.Add(sambaADois);
-
-            var umPar = new Musica(ventura);
-            umPar.id = 2;
-            umPar.titulo = "Um Par";
-            musicaList.Add(umPar);
-
-            var poisE = new Musica(ventura);
-            poisE.id = 3;
-            poisE.titulo = "Pois é";
-            musicaList.Add(poisE);
-
-            var taBom = new Musica(quatro);
-            taBom.id = 4;
-            taBom.titulo = "Ta Bom";
-            musicaList.Add(taBom);
-
-            var horizonteDistante = new Musica(blocoDoEuSozinho);
-            horizonteDistante.id = 5;
-            horizonteDistante.titulo = "Horizonte Distante";
-            musicaList.Add(horizonteDistante);
-
-            return musicaList;
+            listarRegistros();
         }
     }
 }
