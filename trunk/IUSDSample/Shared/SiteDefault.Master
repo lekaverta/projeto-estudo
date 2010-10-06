@@ -17,6 +17,26 @@
                 <img src="/Imagens/Flor-de-lotus.jpg" alt="Lotus" />
                 <h1>Insert, Update, Select e Delete - Sample</h1>
             </div>
+
+            <asp:Repeater runat="server" ID="rptMenuImagens" 
+                onitemdatabound="rptMenuImagens_ItemDataBound">
+                <HeaderTemplate>
+                    <table class="menu-imagens" style="width:100%;">
+                        <tbody>
+                            <tr>
+                </HeaderTemplate>
+                <ItemTemplate>
+                                <td>
+                                    <asp:ImageButton runat="server" ID="btnItemMenu"
+                                                     onclick="btnItemMenu_Click"  BorderStyle="None" />
+                                </td>
+                </ItemTemplate>
+                <FooterTemplate>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </FooterTemplate>
+            </asp:Repeater>
         
             <div class="container-menu">
                 <asp:Menu runat="server" ID="menuPrincipal" DataSourceID="siteMapDataSource" 
@@ -34,7 +54,6 @@
                     </asp:SiteMapPath>
                 </div>
                 <asp:ContentPlaceHolder ID="cphConteudo" runat="server" />
-
             </div>
         </form>
     </body>
